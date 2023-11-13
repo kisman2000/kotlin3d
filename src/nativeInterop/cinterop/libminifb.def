@@ -1,0 +1,16 @@
+compilerOpts = -I /usr/include -I minifblib
+headers = \
+MiniFB.h \
+MiniFB_cpp.h \
+MiniFB_enums.h \
+MiniFB_ios.h \
+X11/Xlib.h \
+X11/Xutil.h \
+X11/XKBlib.h \
+X11/keysym.h \
+X11/Xatom.h \
+X11/cursorfont.h \
+GL/gl.h \
+GL/glx.h
+
+linkerOpts = -L /lib64 -L /lib64/vlc  -L /lib -L /opt/local/lib -L /opt/local/lib/vlc -L /usr/local/opt/ -L /usr/local/opt/vlc -l minifb -L/usr/lib/x86_64-linux-gnu -l X11 -l GL
